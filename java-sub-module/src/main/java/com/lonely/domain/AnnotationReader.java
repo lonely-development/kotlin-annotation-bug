@@ -14,6 +14,6 @@ public class AnnotationReader {
      */
     public static void parseAnnotation(JavaAnnotation annotation) {
         var oneOf = annotation.oneOf();
-        System.out.printf("Should reach here with count 0: " + oneOf.length);
+        System.out.println("Should reach here with count 0: " + oneOf.length);
     }
 }
