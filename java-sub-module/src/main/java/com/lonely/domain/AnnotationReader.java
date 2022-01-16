@@ -13,7 +13,8 @@ public class AnnotationReader {
      * @param annotation Java annotation, created via Kotlin.
      */
     public static void parseAnnotation(JavaAnnotation annotation) {
+        System.out.println("Retrieving annotation...");
         var oneOf = annotation.oneOf();
-        System.out.println("Should reach here with count 0: " + oneOf.length);
+        System.out.println("Will not reach here because of ClassCastException: " + oneOf.length);
     }
 }
